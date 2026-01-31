@@ -135,7 +135,7 @@ export default function SpaceshipLabs() {
         <div ref={containerRef} className="bg-[#050505] text-white p-8 font-sans overflow-y-auto min-h-screen relative">
             {/* Single persistent Canvas for all ships */}
             <div className="fixed inset-0 pointer-events-none z-0">
-                <Canvas eventSource={containerRef as React.RefObject<HTMLElement>} className="w-full h-full">
+                <Canvas eventSource={containerRef as any} className="w-full h-full">
                     <View.Port />
                 </Canvas>
             </div>
