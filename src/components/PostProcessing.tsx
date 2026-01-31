@@ -5,7 +5,7 @@ import { EffectComposer, Bloom, Noise, Vignette } from "@react-three/postprocess
 
 export const PostProcessing = () => {
     return (
-        <EffectComposer disableNormalPass>
+        <EffectComposer>
             <Bloom
                 intensity={0.5}
                 luminanceThreshold={0.9}
