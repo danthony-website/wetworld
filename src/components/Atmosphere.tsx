@@ -27,7 +27,7 @@ export const Atmosphere = () => {
     });
 
     return (
-        <mesh ref={ref} scale={atmosphereStyle.scale as [number, number, number]}>
+        <mesh ref={ref} scale={atmosphereStyle.scale}>
             <sphereGeometry args={[8, 64, 64]} />
             <meshStandardMaterial
                 color={atmosphereStyle.color}
